@@ -4,13 +4,13 @@
 
 DECLARE 
 -- Название схемы детали.
-@DetailSchemaName NCHAR(100) = 'UsrИмяСхемыДетали',
+@DetailSchemaName NCHAR(100) = 'AlrSchemaab93ca9bDetail',
 -- Название схемы объекта детали.
-@EntitySchemaName NVARCHAR(100) = 'UsrИмяСхемыОбъектаДетали',
+@EntitySchemaName NVARCHAR(100) = 'AlrAffiliates',
 -- Название детали используя латиницу.
-@DetailCaption NVARCHAR(100) = 'DetailName' 
+--@DetailCaption NVARCHAR(100) = 'DetailName' 
 -- В случае если название содержит кириллицу используйте:
--- @DetailCaption NVARCHAR(100) = N'ИмяДетали' 
+@DetailCaption NVARCHAR(100) = N'Аффилированные лица Контрагента' 
 
 INSERT INTO SysDetail(
 	ProcessListeners,
@@ -35,9 +35,11 @@ DECLARE
 -- Название схемы страницы добавления детали.
 @CardSchemaName NCHAR(100) = 'UsrИмяМоделиПредставления',
 -- Название схемы объекта детали.
-@EntitySchemaName NVARCHAR(100) = 'UsrИмяОбъектаДетали',
+@EntitySchemaName NVARCHAR(100) = 'AlrAffiliates',
 -- Название страницы детали.
-@PageCaption NVARCHAR(100) = N'Страница добавления детали', -- Пустая строка.@Blank NCHAR(100) = ''
+@PageCaption NVARCHAR(100) = N'Аффилированные лица', 
+-- Пустая строка.
+@Blank NCHAR(100) = ''
 
 INSERT INTO SysModuleEntity(
 	ProcessListeners,
