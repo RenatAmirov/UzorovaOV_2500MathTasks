@@ -33,7 +33,7 @@ VALUES (
 
 DECLARE
 -- Название схемы страницы добавления детали.
-@CardSchemaName NCHAR(100) = 'UsrИмяМоделиПредставления',
+@CardSchemaName NCHAR(100) = 'AlrAffiliatesSchemaPage',
 -- Название схемы объекта детали.
 @EntitySchemaName NVARCHAR(100) = 'AlrAffiliates',
 -- Название страницы детали.
